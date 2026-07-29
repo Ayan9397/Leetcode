@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/Ayan9397/Leetcode/tree/master/0011-container-with-most-water) |
 | [0014-longest-common-prefix](https://github.com/Ayan9397/Leetcode/tree/master/0014-longest-common-prefix) |
 | [0015-3sum](https://github.com/Ayan9397/Leetcode/tree/master/0015-3sum) |
+| [0016-3sum-closest](https://github.com/Ayan9397/Leetcode/tree/master/0016-3sum-closest) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Ayan9397/Leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Ayan9397/Leetcode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 ## Hash Table
@@ -67,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Ayan9397/Leetcode/tree/master/0015-3sum) |
+| [0016-3sum-closest](https://github.com/Ayan9397/Leetcode/tree/master/0016-3sum-closest) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Ayan9397/Leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Ayan9397/Leetcode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/Ayan9397/Leetcode/tree/master/3517-smallest-palindromic-rearrangement-i) |
@@ -77,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/Ayan9397/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0011-container-with-most-water](https://github.com/Ayan9397/Leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Ayan9397/Leetcode/tree/master/0015-3sum) |
+| [0016-3sum-closest](https://github.com/Ayan9397/Leetcode/tree/master/0016-3sum-closest) |
 ## Dynamic Programming
 |  |
 | ------- |
