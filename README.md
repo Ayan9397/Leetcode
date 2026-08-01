@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/Ayan9397/Leetcode/tree/master/0015-3sum) |
 | [0016-3sum-closest](https://github.com/Ayan9397/Leetcode/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/Ayan9397/Leetcode/tree/master/0018-4sum) |
+| [0486-predict-the-winner](https://github.com/Ayan9397/Leetcode/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Ayan9397/Leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Ayan9397/Leetcode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 ## Hash Table
@@ -37,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0009-palindrome-number](https://github.com/Ayan9397/Leetcode/tree/master/0009-palindrome-number) |
 | [0012-integer-to-roman](https://github.com/Ayan9397/Leetcode/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/Ayan9397/Leetcode/tree/master/0013-roman-to-integer) |
+| [0486-predict-the-winner](https://github.com/Ayan9397/Leetcode/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Ayan9397/Leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Ayan9397/Leetcode/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3518-smallest-palindromic-rearrangement-ii](https://github.com/Ayan9397/Leetcode/tree/master/3518-smallest-palindromic-rearrangement-ii) |
@@ -46,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0002-add-two-numbers](https://github.com/Ayan9397/Leetcode/tree/master/0002-add-two-numbers) |
 | [0010-regular-expression-matching](https://github.com/Ayan9397/Leetcode/tree/master/0010-regular-expression-matching) |
+| [0486-predict-the-winner](https://github.com/Ayan9397/Leetcode/tree/master/0486-predict-the-winner) |
 ## String
 |  |
 | ------- |
@@ -98,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Ayan9397/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0010-regular-expression-matching](https://github.com/Ayan9397/Leetcode/tree/master/0010-regular-expression-matching) |
+| [0486-predict-the-winner](https://github.com/Ayan9397/Leetcode/tree/master/0486-predict-the-winner) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -126,4 +130,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Ayan9397/Leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
+## Game Theory
+|  |
+| ------- |
+| [0486-predict-the-winner](https://github.com/Ayan9397/Leetcode/tree/master/0486-predict-the-winner) |
 <!---LeetCode Topics End-->
