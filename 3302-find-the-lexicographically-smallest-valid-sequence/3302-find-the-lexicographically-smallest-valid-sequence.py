@@ -1,0 +1,86 @@
+class Solution:
+    def validSequence(self, word1: str, word2: str):
+        n = len(word1)
+        m = len(word2)
+
+        # exact[i]:
+        # smallest position j such that word2[j:]
+        # is an exact subsequence of word1[i:]
+        exact = [m] * (n + 1)
+
+        # almost[i]:
+        # smallest position j such that word2[j:]
+        # can be matched using at most one mismatch
+        almost = [m] * (n + 1)
+
+        # Build suffix information from right to left
+        for i in range(n - 1, -1, -1):
+
+            # -------------------------
+            # Compute exact[i]
+            # -------------------------
+            exact[i] = exact[i + 1]
+
+            if exact[i + 1] > 0:
+                j = exact[i + 1] - 1
+
+                if word1[i] == word2[j]:
+                    exact[i] = j
+
+            # -------------------------
+            # Compute almost[i]
+            # -------------------------
+            almost[i] = almost[i + 1]
+
+            # Case 1:
+            # Current character matches the character immediately
+            # before the suffix that can already be matched with <= 1 mismatch.
+            if almost[i + 1] > 0:
+                j = almost[i + 1] - 1
+
+                if word1[i] == word2[j]:
+                    almost[i] = min(almost[i], j)
+
+            # Case 2:
+            # Use our one allowed mismatch on word1[i].
+            # Therefore, the remaining suffix must match EXACTLY.
+            if exact[i + 1] > 0:
+                j = exact[i + 1] - 1
+                almost[i] = min(almost[i], j)
+
+        # ---------------------------------
+        # Greedily construct the answer
+        # ---------------------------------
+        ans = []
+        j = 0
+        used_mismatch = False
+
+        for i in range(n):
+
+            if j == m:
+                break
+
+            # Option 1: characters already match
+            if word1[i] == word2[j]:
+
+                # We can safely take i if the remaining target
+                # can be formed with <= 1 mismatch.
+                if almost[i + 1] <= j + 1:
+                    ans.append(i)
+                    j += 1
+
+            # Option 2: use our one mismatch
+            elif not used_mismatch:
+
+                # After using mismatch here, the rest must
+                # be matched EXACTLY.
+                if exact[i + 1] <= j + 1:
+                    ans.append(i)
+                    j += 1
+                    used_mismatch = True
+
+        # Could not form word2
+        if j != m:
+            return []
+
+        return ans
