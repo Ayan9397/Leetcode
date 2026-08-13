@@ -79,8 +79,6 @@ class Solution:
                     j += 1
                     used_mismatch = True
 
-        # Could not form word2
         if j != m:
             return []
-
         return ans
