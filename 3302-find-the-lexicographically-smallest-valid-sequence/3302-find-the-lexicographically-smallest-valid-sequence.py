@@ -17,10 +17,6 @@ class Solution:
 
                 if word1[i] == word2[j]:
                     exact[i] = j
-
-            # -------------------------
-            # Compute almost[i]
-            # -------------------------
             almost[i] = almost[i + 1]
 
             if almost[i + 1] > 0:
@@ -42,15 +38,12 @@ class Solution:
 
             if j == m:
                 break
-
-            # Option 1: characters already match
             if word1[i] == word2[j]:
 
                 if almost[i + 1] <= j + 1:
                     ans.append(i)
                     j += 1
 
-            # Option 2: use our one mismatch
             elif not used_mismatch:
 
                 if exact[i + 1] <= j + 1:
