@@ -3,22 +3,13 @@ class Solution:
         n = len(word1)
         m = len(word2)
 
-        # exact[i]:
-        # smallest position j such that word2[j:]
-        # is an exact subsequence of word1[i:]
         exact = [m] * (n + 1)
 
-        # almost[i]:
-        # smallest position j such that word2[j:]
-        # can be matched using at most one mismatch
         almost = [m] * (n + 1)
 
-        # Build suffix information from right to left
         for i in range(n - 1, -1, -1):
 
-            # -------------------------
-            # Compute exact[i]
-            # -------------------------
+          
             exact[i] = exact[i + 1]
 
             if exact[i + 1] > 0:
