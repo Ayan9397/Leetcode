@@ -23,25 +23,17 @@ class Solution:
             # -------------------------
             almost[i] = almost[i + 1]
 
-            # Case 1:
-            # Current character matches the character immediately
-            # before the suffix that can already be matched with <= 1 mismatch.
             if almost[i + 1] > 0:
                 j = almost[i + 1] - 1
 
                 if word1[i] == word2[j]:
                     almost[i] = min(almost[i], j)
 
-            # Case 2:
-            # Use our one allowed mismatch on word1[i].
-            # Therefore, the remaining suffix must match EXACTLY.
             if exact[i + 1] > 0:
                 j = exact[i + 1] - 1
                 almost[i] = min(almost[i], j)
 
-        # ---------------------------------
-        # Greedily construct the answer
-        # ---------------------------------
+
         ans = []
         j = 0
         used_mismatch = False
@@ -54,8 +46,6 @@ class Solution:
             # Option 1: characters already match
             if word1[i] == word2[j]:
 
-                # We can safely take i if the remaining target
-                # can be formed with <= 1 mismatch.
                 if almost[i + 1] <= j + 1:
                     ans.append(i)
                     j += 1
@@ -63,8 +53,6 @@ class Solution:
             # Option 2: use our one mismatch
             elif not used_mismatch:
 
-                # After using mismatch here, the rest must
-                # be matched EXACTLY.
                 if exact[i + 1] <= j + 1:
                     ans.append(i)
                     j += 1
